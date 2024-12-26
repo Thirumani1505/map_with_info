@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7305408bf4a630cb372dba3721715611 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7305408bf4a630cb372dba3721715611" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7305408bf4a630cb372dba3721715611 = L.map(
+                "map_7305408bf4a630cb372dba3721715611",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c28bc63fd0c7d277acf0bbb4d75f150 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4c28bc63fd0c7d277acf0bbb4d75f150.addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var marker_38a9cf976c26cf4171ebc000c42e6205 = L.marker(
+                [20.8902, 70.4028],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_6ef36a08e57f9922fa191868e276ce89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_38a9cf976c26cf4171ebc000c42e6205.setIcon(icon_6ef36a08e57f9922fa191868e276ce89);
+        
+    
+        var popup_7447262d0429dfad6dbaaca0c59eb5fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d4b21280d7754a6b95e67595a8b2554 = $(`<div id="html_5d4b21280d7754a6b95e67595a8b2554" style="width: 100.0%; height: 100.0%;"><b>Somnath</b><br>Located in Gujarat, Somnath is the first Jyotirlinga and symbolizes the start of creation. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Somnath_temple' target='_blank'>More info</a></div>`)[0];
+                popup_7447262d0429dfad6dbaaca0c59eb5fc.setContent(html_5d4b21280d7754a6b95e67595a8b2554);
+            
+        
+
+        marker_38a9cf976c26cf4171ebc000c42e6205.bindPopup(popup_7447262d0429dfad6dbaaca0c59eb5fc)
+        ;
+
+        
+    
+    
+            marker_38a9cf976c26cf4171ebc000c42e6205.bindTooltip(
+                `<div>
+                     Somnath
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_852645250fc61441a912622e3d3cb449 = L.marker(
+                [20.8902, 70.4028],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_5885a408edf6fe748bd5c826477798e2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eSomnath\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_852645250fc61441a912622e3d3cb449.setIcon(div_icon_5885a408edf6fe748bd5c826477798e2);
+        
+    
+        var popup_ad95eb8b013ca2712db0b7cc5c7aa91f = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_e326552bb3dfb3aa8b74b228e21e2626 = $(`<div id="html_e326552bb3dfb3aa8b74b228e21e2626" style="width: 100.0%; height: 100.0%;"><b>Somnath</b></div>`)[0];
+                popup_ad95eb8b013ca2712db0b7cc5c7aa91f.setContent(html_e326552bb3dfb3aa8b74b228e21e2626);
+            
+        
+
+        marker_852645250fc61441a912622e3d3cb449.bindPopup(popup_ad95eb8b013ca2712db0b7cc5c7aa91f)
+        ;
+
+        
+    
+    
+            var marker_50d66737109a302b94f1d4b046c725be = L.marker(
+                [16.0728, 78.8723],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_1b49318748b32f503493c87fdb76a626 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_50d66737109a302b94f1d4b046c725be.setIcon(icon_1b49318748b32f503493c87fdb76a626);
+        
+    
+        var popup_cfbeb4afc39d969927b507aa07111798 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61b67fdf0b98f4b9a60081ffd9866e6f = $(`<div id="html_61b67fdf0b98f4b9a60081ffd9866e6f" style="width: 100.0%; height: 100.0%;"><b>Mallikarjuna</b><br>Located in Andhra Pradesh, it is situated on the Shri Shaila Mountain. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Mallikarjuna_Jyotirlinga' target='_blank'>More info</a></div>`)[0];
+                popup_cfbeb4afc39d969927b507aa07111798.setContent(html_61b67fdf0b98f4b9a60081ffd9866e6f);
+            
+        
+
+        marker_50d66737109a302b94f1d4b046c725be.bindPopup(popup_cfbeb4afc39d969927b507aa07111798)
+        ;
+
+        
+    
+    
+            marker_50d66737109a302b94f1d4b046c725be.bindTooltip(
+                `<div>
+                     Mallikarjuna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e6e9b62ec235b902770c239061a9404f = L.marker(
+                [16.0728, 78.8723],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_83f60d7751c9c13ae597c8f7b6276ec4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eMallikarjuna\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_e6e9b62ec235b902770c239061a9404f.setIcon(div_icon_83f60d7751c9c13ae597c8f7b6276ec4);
+        
+    
+        var popup_82ffc09a9271dd6c1c1210e6a4ea9c42 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_82809f3a2c6933d891c4c5debb1b5c02 = $(`<div id="html_82809f3a2c6933d891c4c5debb1b5c02" style="width: 100.0%; height: 100.0%;"><b>Mallikarjuna</b></div>`)[0];
+                popup_82ffc09a9271dd6c1c1210e6a4ea9c42.setContent(html_82809f3a2c6933d891c4c5debb1b5c02);
+            
+        
+
+        marker_e6e9b62ec235b902770c239061a9404f.bindPopup(popup_82ffc09a9271dd6c1c1210e6a4ea9c42)
+        ;
+
+        
+    
+    
+            var marker_7d7c7b08fa1bb1c3f6357fbf4437691a = L.marker(
+                [23.1828, 75.768],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_ebec51d9093c9e3748eb7840be0fc6df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7d7c7b08fa1bb1c3f6357fbf4437691a.setIcon(icon_ebec51d9093c9e3748eb7840be0fc6df);
+        
+    
+        var popup_85a148c568b4e91133897267109bd850 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8341a16bebde36ef85048feb62138a4d = $(`<div id="html_8341a16bebde36ef85048feb62138a4d" style="width: 100.0%; height: 100.0%;"><b>Mahakaleshwar</b><br>Located in Ujjain, Madhya Pradesh, it is a temple where Lord Shiva is worshiped as Mahakal. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga' target='_blank'>More info</a></div>`)[0];
+                popup_85a148c568b4e91133897267109bd850.setContent(html_8341a16bebde36ef85048feb62138a4d);
+            
+        
+
+        marker_7d7c7b08fa1bb1c3f6357fbf4437691a.bindPopup(popup_85a148c568b4e91133897267109bd850)
+        ;
+
+        
+    
+    
+            marker_7d7c7b08fa1bb1c3f6357fbf4437691a.bindTooltip(
+                `<div>
+                     Mahakaleshwar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_35db2b5ff998ea52e4ca3a55d2721154 = L.marker(
+                [23.1828, 75.768],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_9fade670a26d8e486a5decf8f434d0cf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eMahakaleshwar\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_35db2b5ff998ea52e4ca3a55d2721154.setIcon(div_icon_9fade670a26d8e486a5decf8f434d0cf);
+        
+    
+        var popup_910b3de6c154ce9a85aae24659ceb504 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_1d385b7dd9938b4d11d418d1b3ae6fcf = $(`<div id="html_1d385b7dd9938b4d11d418d1b3ae6fcf" style="width: 100.0%; height: 100.0%;"><b>Mahakaleshwar</b></div>`)[0];
+                popup_910b3de6c154ce9a85aae24659ceb504.setContent(html_1d385b7dd9938b4d11d418d1b3ae6fcf);
+            
+        
+
+        marker_35db2b5ff998ea52e4ca3a55d2721154.bindPopup(popup_910b3de6c154ce9a85aae24659ceb504)
+        ;
+
+        
+    
+    
+            var marker_3123c2df13e1a54bd78d01b5c5288be9 = L.marker(
+                [22.0312, 76.0554],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_96802cdf32dfb16c8889d609d5eddd47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3123c2df13e1a54bd78d01b5c5288be9.setIcon(icon_96802cdf32dfb16c8889d609d5eddd47);
+        
+    
+        var popup_f183b9cc472178fb7dc2ced266a6547d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26741c58d014d8d98b5fa049c576dbdf = $(`<div id="html_26741c58d014d8d98b5fa049c576dbdf" style="width: 100.0%; height: 100.0%;"><b>Omkareshwar</b><br>Located in Madhya Pradesh, Omkareshwar is situated on an island in the Narmada River. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Omkareshwar' target='_blank'>More info</a></div>`)[0];
+                popup_f183b9cc472178fb7dc2ced266a6547d.setContent(html_26741c58d014d8d98b5fa049c576dbdf);
+            
+        
+
+        marker_3123c2df13e1a54bd78d01b5c5288be9.bindPopup(popup_f183b9cc472178fb7dc2ced266a6547d)
+        ;
+
+        
+    
+    
+            marker_3123c2df13e1a54bd78d01b5c5288be9.bindTooltip(
+                `<div>
+                     Omkareshwar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0690a356feeb11a4cbc243a5a88a8cc3 = L.marker(
+                [22.0312, 76.0554],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_0d30582625e41ed57331e369944cf9a6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eOmkareshwar\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_0690a356feeb11a4cbc243a5a88a8cc3.setIcon(div_icon_0d30582625e41ed57331e369944cf9a6);
+        
+    
+        var popup_4bc44358da4974d5370e4afb0e7d1b68 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_e6fc554fb5d7c3c635b82e996781f503 = $(`<div id="html_e6fc554fb5d7c3c635b82e996781f503" style="width: 100.0%; height: 100.0%;"><b>Omkareshwar</b></div>`)[0];
+                popup_4bc44358da4974d5370e4afb0e7d1b68.setContent(html_e6fc554fb5d7c3c635b82e996781f503);
+            
+        
+
+        marker_0690a356feeb11a4cbc243a5a88a8cc3.bindPopup(popup_4bc44358da4974d5370e4afb0e7d1b68)
+        ;
+
+        
+    
+    
+            var marker_06ef2c263a2473c4e1b57ca39dd1b875 = L.marker(
+                [30.7352, 79.0669],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_d652b8cfde829203c0f632c064213ffe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_06ef2c263a2473c4e1b57ca39dd1b875.setIcon(icon_d652b8cfde829203c0f632c064213ffe);
+        
+    
+        var popup_30f1ed4524375ace244a52ce8d4724a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6494b35c990a21fae50dd70625805e2f = $(`<div id="html_6494b35c990a21fae50dd70625805e2f" style="width: 100.0%; height: 100.0%;"><b>Kedarnath</b><br>Located in Uttarakhand, it is nestled in the Himalayan ranges. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Kedarnath_Temple' target='_blank'>More info</a></div>`)[0];
+                popup_30f1ed4524375ace244a52ce8d4724a5.setContent(html_6494b35c990a21fae50dd70625805e2f);
+            
+        
+
+        marker_06ef2c263a2473c4e1b57ca39dd1b875.bindPopup(popup_30f1ed4524375ace244a52ce8d4724a5)
+        ;
+
+        
+    
+    
+            marker_06ef2c263a2473c4e1b57ca39dd1b875.bindTooltip(
+                `<div>
+                     Kedarnath
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9227cfbd17f6604bf2519c81ae7c8300 = L.marker(
+                [30.7352, 79.0669],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_1296b454d8cd4c1eb386913415d3a6e7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eKedarnath\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_9227cfbd17f6604bf2519c81ae7c8300.setIcon(div_icon_1296b454d8cd4c1eb386913415d3a6e7);
+        
+    
+        var popup_020055ead3a7f9b65835c051862a4ceb = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_5b4cca8eb83dad3212e3e2394ee5752b = $(`<div id="html_5b4cca8eb83dad3212e3e2394ee5752b" style="width: 100.0%; height: 100.0%;"><b>Kedarnath</b></div>`)[0];
+                popup_020055ead3a7f9b65835c051862a4ceb.setContent(html_5b4cca8eb83dad3212e3e2394ee5752b);
+            
+        
+
+        marker_9227cfbd17f6604bf2519c81ae7c8300.bindPopup(popup_020055ead3a7f9b65835c051862a4ceb)
+        ;
+
+        
+    
+    
+            var marker_5bf119ff9b9091ed2eafb582ed935c37 = L.marker(
+                [19.0544, 73.553],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_a20dbe3cd8c99e735b7f0e8c4a8891fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5bf119ff9b9091ed2eafb582ed935c37.setIcon(icon_a20dbe3cd8c99e735b7f0e8c4a8891fd);
+        
+    
+        var popup_ec450dd30ebe7b7d0625023371d614e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_466d9f4fb33b6401d3b66908158485df = $(`<div id="html_466d9f4fb33b6401d3b66908158485df" style="width: 100.0%; height: 100.0%;"><b>Bhimashankar</b><br>Located in Maharashtra, Bhimashankar is surrounded by lush greenery. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Bhimashankar_Temple' target='_blank'>More info</a></div>`)[0];
+                popup_ec450dd30ebe7b7d0625023371d614e3.setContent(html_466d9f4fb33b6401d3b66908158485df);
+            
+        
+
+        marker_5bf119ff9b9091ed2eafb582ed935c37.bindPopup(popup_ec450dd30ebe7b7d0625023371d614e3)
+        ;
+
+        
+    
+    
+            marker_5bf119ff9b9091ed2eafb582ed935c37.bindTooltip(
+                `<div>
+                     Bhimashankar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a96b4814f88b6a173f6e6dd91306312e = L.marker(
+                [19.0544, 73.553],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_1dd4890e0ba301b3edc908db4059588d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eBhimashankar\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_a96b4814f88b6a173f6e6dd91306312e.setIcon(div_icon_1dd4890e0ba301b3edc908db4059588d);
+        
+    
+        var popup_36a661b161d3f8a141058f03c2089fb5 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_04d18dbee4c634de5b8bb2ab50e3836b = $(`<div id="html_04d18dbee4c634de5b8bb2ab50e3836b" style="width: 100.0%; height: 100.0%;"><b>Bhimashankar</b></div>`)[0];
+                popup_36a661b161d3f8a141058f03c2089fb5.setContent(html_04d18dbee4c634de5b8bb2ab50e3836b);
+            
+        
+
+        marker_a96b4814f88b6a173f6e6dd91306312e.bindPopup(popup_36a661b161d3f8a141058f03c2089fb5)
+        ;
+
+        
+    
+    
+            var marker_cfe1a37266f7a75ab34b4a16973816f7 = L.marker(
+                [25.3109, 83.0097],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_03333fd1d8badb943183701f4a382167 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cfe1a37266f7a75ab34b4a16973816f7.setIcon(icon_03333fd1d8badb943183701f4a382167);
+        
+    
+        var popup_094a4b70f7834d1b2022002ba861ff69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51343d225f001e08cc461b00a5d026db = $(`<div id="html_51343d225f001e08cc461b00a5d026db" style="width: 100.0%; height: 100.0%;"><b>Kashi Vishwanath</b><br>Located in Varanasi, Uttar Pradesh, it is one of the most famous temples in India. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple' target='_blank'>More info</a></div>`)[0];
+                popup_094a4b70f7834d1b2022002ba861ff69.setContent(html_51343d225f001e08cc461b00a5d026db);
+            
+        
+
+        marker_cfe1a37266f7a75ab34b4a16973816f7.bindPopup(popup_094a4b70f7834d1b2022002ba861ff69)
+        ;
+
+        
+    
+    
+            marker_cfe1a37266f7a75ab34b4a16973816f7.bindTooltip(
+                `<div>
+                     Kashi Vishwanath
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc5c619f279dff2840ed19c2bdfc89f2 = L.marker(
+                [25.3109, 83.0097],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_ef9baaa409a36a95fd42a3ed6ab61b05 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eKashi Vishwanath\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_bc5c619f279dff2840ed19c2bdfc89f2.setIcon(div_icon_ef9baaa409a36a95fd42a3ed6ab61b05);
+        
+    
+        var popup_7b3e819084cdcee5cb9bfaa10e600775 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_62de4b05758d7bfe9cd12f053afac497 = $(`<div id="html_62de4b05758d7bfe9cd12f053afac497" style="width: 100.0%; height: 100.0%;"><b>Kashi Vishwanath</b></div>`)[0];
+                popup_7b3e819084cdcee5cb9bfaa10e600775.setContent(html_62de4b05758d7bfe9cd12f053afac497);
+            
+        
+
+        marker_bc5c619f279dff2840ed19c2bdfc89f2.bindPopup(popup_7b3e819084cdcee5cb9bfaa10e600775)
+        ;
+
+        
+    
+    
+            var marker_5fab799fcea119cabf0624ce44d943ef = L.marker(
+                [19.927, 73.553],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_0c8b89376e41a47ccadd3742dd6f37ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5fab799fcea119cabf0624ce44d943ef.setIcon(icon_0c8b89376e41a47ccadd3742dd6f37ce);
+        
+    
+        var popup_8c21380767bf7eebf81888412037879d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1548a4fe8051e42d06d8a875c399f651 = $(`<div id="html_1548a4fe8051e42d06d8a875c399f651" style="width: 100.0%; height: 100.0%;"><b>Trimbakeshwar</b><br>Located in Maharashtra, it is near the origin of the Godavari River. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple' target='_blank'>More info</a></div>`)[0];
+                popup_8c21380767bf7eebf81888412037879d.setContent(html_1548a4fe8051e42d06d8a875c399f651);
+            
+        
+
+        marker_5fab799fcea119cabf0624ce44d943ef.bindPopup(popup_8c21380767bf7eebf81888412037879d)
+        ;
+
+        
+    
+    
+            marker_5fab799fcea119cabf0624ce44d943ef.bindTooltip(
+                `<div>
+                     Trimbakeshwar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eef1fd5ec16a85f501ecd3b1fe12044e = L.marker(
+                [19.927, 73.553],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_4c23846c9368ebc650f04a12b01f7770 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eTrimbakeshwar\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_eef1fd5ec16a85f501ecd3b1fe12044e.setIcon(div_icon_4c23846c9368ebc650f04a12b01f7770);
+        
+    
+        var popup_21d541f0afe9667e8e1828d4c1d7976c = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_a9f4949802d9c0f9e5cb612acd3c0726 = $(`<div id="html_a9f4949802d9c0f9e5cb612acd3c0726" style="width: 100.0%; height: 100.0%;"><b>Trimbakeshwar</b></div>`)[0];
+                popup_21d541f0afe9667e8e1828d4c1d7976c.setContent(html_a9f4949802d9c0f9e5cb612acd3c0726);
+            
+        
+
+        marker_eef1fd5ec16a85f501ecd3b1fe12044e.bindPopup(popup_21d541f0afe9667e8e1828d4c1d7976c)
+        ;
+
+        
+    
+    
+            var marker_10fd5f2f78bfcbeb058deaee9073a2b0 = L.marker(
+                [24.0312, 86.707],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_618ee8a0ae3b6ed9889090784a0497d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_10fd5f2f78bfcbeb058deaee9073a2b0.setIcon(icon_618ee8a0ae3b6ed9889090784a0497d0);
+        
+    
+        var popup_d245c85d1127b149bc97ed77e9b60b1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cb5d7ef52e057d7767b2c3cb8e16fc0 = $(`<div id="html_6cb5d7ef52e057d7767b2c3cb8e16fc0" style="width: 100.0%; height: 100.0%;"><b>Vaidyanath</b><br>Located in Jharkhand, it is also known as Baba Dham. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Baidyanath_Temple' target='_blank'>More info</a></div>`)[0];
+                popup_d245c85d1127b149bc97ed77e9b60b1f.setContent(html_6cb5d7ef52e057d7767b2c3cb8e16fc0);
+            
+        
+
+        marker_10fd5f2f78bfcbeb058deaee9073a2b0.bindPopup(popup_d245c85d1127b149bc97ed77e9b60b1f)
+        ;
+
+        
+    
+    
+            marker_10fd5f2f78bfcbeb058deaee9073a2b0.bindTooltip(
+                `<div>
+                     Vaidyanath
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3cd57c0758bc3dfbb2f547e148b6da8a = L.marker(
+                [24.0312, 86.707],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_40bd016b244d7ef165ac5973edabbe54 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eVaidyanath\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_3cd57c0758bc3dfbb2f547e148b6da8a.setIcon(div_icon_40bd016b244d7ef165ac5973edabbe54);
+        
+    
+        var popup_54fa2c779efb1bf1d0086f59e6c0ec2b = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_4e9354f8341ed6bd93b7c4446180278b = $(`<div id="html_4e9354f8341ed6bd93b7c4446180278b" style="width: 100.0%; height: 100.0%;"><b>Vaidyanath</b></div>`)[0];
+                popup_54fa2c779efb1bf1d0086f59e6c0ec2b.setContent(html_4e9354f8341ed6bd93b7c4446180278b);
+            
+        
+
+        marker_3cd57c0758bc3dfbb2f547e148b6da8a.bindPopup(popup_54fa2c779efb1bf1d0086f59e6c0ec2b)
+        ;
+
+        
+    
+    
+            var marker_bff04466231d7a6e57b33a02650f6bdf = L.marker(
+                [22.4551, 69.1345],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_4bf20a8be5b0ecbcdaf9f82780ad6f35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bff04466231d7a6e57b33a02650f6bdf.setIcon(icon_4bf20a8be5b0ecbcdaf9f82780ad6f35);
+        
+    
+        var popup_5cc93df7352aeafe8505ef2475a2a9c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c7e6796a54254940aa291d839d65c97 = $(`<div id="html_7c7e6796a54254940aa291d839d65c97" style="width: 100.0%; height: 100.0%;"><b>Nageshwar</b><br>Located near Dwarka in Gujarat, it is famous for its serene atmosphere. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Nageshvara_Jyotirlinga' target='_blank'>More info</a></div>`)[0];
+                popup_5cc93df7352aeafe8505ef2475a2a9c2.setContent(html_7c7e6796a54254940aa291d839d65c97);
+            
+        
+
+        marker_bff04466231d7a6e57b33a02650f6bdf.bindPopup(popup_5cc93df7352aeafe8505ef2475a2a9c2)
+        ;
+
+        
+    
+    
+            marker_bff04466231d7a6e57b33a02650f6bdf.bindTooltip(
+                `<div>
+                     Nageshwar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_62188ec69e6f8175df057e7002c4b624 = L.marker(
+                [22.4551, 69.1345],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_49638013d6ee057417a2d6b10812807d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eNageshwar\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_62188ec69e6f8175df057e7002c4b624.setIcon(div_icon_49638013d6ee057417a2d6b10812807d);
+        
+    
+        var popup_506a9ad4f092a2621d52695527fbb28d = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_17417896a34715d52d11fbb5b72a3460 = $(`<div id="html_17417896a34715d52d11fbb5b72a3460" style="width: 100.0%; height: 100.0%;"><b>Nageshwar</b></div>`)[0];
+                popup_506a9ad4f092a2621d52695527fbb28d.setContent(html_17417896a34715d52d11fbb5b72a3460);
+            
+        
+
+        marker_62188ec69e6f8175df057e7002c4b624.bindPopup(popup_506a9ad4f092a2621d52695527fbb28d)
+        ;
+
+        
+    
+    
+            var marker_301559bd81172d3433842306ba85f730 = L.marker(
+                [9.2881, 79.3174],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_a37c791ed19a14beae675482f54233a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_301559bd81172d3433842306ba85f730.setIcon(icon_a37c791ed19a14beae675482f54233a2);
+        
+    
+        var popup_8773c686221cde3de386a949ffb4f7bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df77a9c6e34eb495f0df8f94ba79e702 = $(`<div id="html_df77a9c6e34eb495f0df8f94ba79e702" style="width: 100.0%; height: 100.0%;"><b>Rameshwar</b><br>Located in Tamil Nadu, it is situated on Rameswaram Island. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Ramanathaswamy_Temple' target='_blank'>More info</a></div>`)[0];
+                popup_8773c686221cde3de386a949ffb4f7bf.setContent(html_df77a9c6e34eb495f0df8f94ba79e702);
+            
+        
+
+        marker_301559bd81172d3433842306ba85f730.bindPopup(popup_8773c686221cde3de386a949ffb4f7bf)
+        ;
+
+        
+    
+    
+            marker_301559bd81172d3433842306ba85f730.bindTooltip(
+                `<div>
+                     Rameshwar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_93d15e8794dc37350d0003f3e599d874 = L.marker(
+                [9.2881, 79.3174],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_f9c949faa7c855318283733955b343ec = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eRameshwar\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_93d15e8794dc37350d0003f3e599d874.setIcon(div_icon_f9c949faa7c855318283733955b343ec);
+        
+    
+        var popup_b9788002b1554ffd27d9bce3be495813 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_56d9b70f96bb8c10aff3e4b527840174 = $(`<div id="html_56d9b70f96bb8c10aff3e4b527840174" style="width: 100.0%; height: 100.0%;"><b>Rameshwar</b></div>`)[0];
+                popup_b9788002b1554ffd27d9bce3be495813.setContent(html_56d9b70f96bb8c10aff3e4b527840174);
+            
+        
+
+        marker_93d15e8794dc37350d0003f3e599d874.bindPopup(popup_b9788002b1554ffd27d9bce3be495813)
+        ;
+
+        
+    
+    
+            var marker_90d1bc174f0241e09ce51ad58ebb3396 = L.marker(
+                [20.007, 75.1775],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var icon_434d79181305f5f0c202855d14370b11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_90d1bc174f0241e09ce51ad58ebb3396.setIcon(icon_434d79181305f5f0c202855d14370b11);
+        
+    
+        var popup_dc1fc3a22103967e697caea6fe7310d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac649e0cd705fe74adc504b2846a4ce0 = $(`<div id="html_ac649e0cd705fe74adc504b2846a4ce0" style="width: 100.0%; height: 100.0%;"><b>Grishneshwar</b><br>Located in Maharashtra, it is near the Ellora caves. Have a Happy, safe, and blessed journey<br><a href='https://en.wikipedia.org/wiki/Grishneshwar_Temple' target='_blank'>More info</a></div>`)[0];
+                popup_dc1fc3a22103967e697caea6fe7310d1.setContent(html_ac649e0cd705fe74adc504b2846a4ce0);
+            
+        
+
+        marker_90d1bc174f0241e09ce51ad58ebb3396.bindPopup(popup_dc1fc3a22103967e697caea6fe7310d1)
+        ;
+
+        
+    
+    
+            marker_90d1bc174f0241e09ce51ad58ebb3396.bindTooltip(
+                `<div>
+                     Grishneshwar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b68db75cde689852e134ee739708d3ca = L.marker(
+                [20.007, 75.1775],
+                {
+}
+            ).addTo(map_7305408bf4a630cb372dba3721715611);
+        
+    
+            var div_icon_c36eb6b5fd68ee77965b44981c5a268b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black; font-weight: bold;\"\u003eGrishneshwar\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_b68db75cde689852e134ee739708d3ca.setIcon(div_icon_c36eb6b5fd68ee77965b44981c5a268b);
+        
+    
+        var popup_fc782dfaa33241b50c4440511387685c = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_dc247436bd75ce16c64fd83bff12e0fb = $(`<div id="html_dc247436bd75ce16c64fd83bff12e0fb" style="width: 100.0%; height: 100.0%;"><b>Grishneshwar</b></div>`)[0];
+                popup_fc782dfaa33241b50c4440511387685c.setContent(html_dc247436bd75ce16c64fd83bff12e0fb);
+            
+        
+
+        marker_b68db75cde689852e134ee739708d3ca.bindPopup(popup_fc782dfaa33241b50c4440511387685c)
+        ;
+
+        
+    
+</script>
+</html>
